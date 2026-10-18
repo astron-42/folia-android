@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Folia Android 下载</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    background: radial-gradient(120% 120% at 50% 0%, #1b2340 0%, #0b0e18 60%);
+    color: #e8ecf7; font-family: -apple-system, BlinkMacSystemFont, "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+    padding: 24px;
+  }
+  .card { width: 100%; max-width: 460px; text-align: center; }
+  .badge { display: inline-block; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: #8ea2ff; border: 1px solid #2b3870; border-radius: 999px; padding: 6px 14px; margin-bottom: 20px; }
+  h1 { font-size: 26px; margin: 0 0 8px; font-weight: 650; }
+  p.lead { color: #98a2c0; font-size: 14px; line-height: 1.7; margin: 0 0 28px; }
+  .row { display: grid; gap: 14px; margin-bottom: 8px; }
+  a.btn {
+    display: flex; flex-direction: column; align-items: stretch; justify-content: center; gap: 2px;
+    background: linear-gradient(135deg, #4f6bff, #7a5cff); color: #fff; text-decoration: none;
+    font-size: 16px; font-weight: 600; padding: 16px 20px; border-radius: 16px;
+    box-shadow: 0 12px 30px -10px rgba(79,107,255,.7);
+  }
+  a.btn.alt { background: linear-gradient(135deg, #2a8a5e, #1fb37a); box-shadow: 0 12px 30px -10px rgba(31,179,122,.6); }
+  a.btn:active { transform: translateY(1px); }
+  .btn .title { font-size: 16px; font-weight: 700; }
+  .btn .sub { font-size: 12.5px; font-weight: 400; opacity: .85; margin-top: 2px; }
+  .meta { margin-top: 18px; font-size: 12.5px; color: #6f7aa0; line-height: 1.9; }
+  .meta b { color: #aab5d8; font-weight: 600; }
+  .note { margin-top: 22px; font-size: 12.5px; color: #6f7aa0; border-top: 1px solid #1d2440; padding-top: 16px; text-align: left; line-height: 1.8; }
+  .tag { display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 6px; background: rgba(255,255,255,.12); margin-left: 6px; vertical-align: middle; }
+</style>
+</head>
+<body>
+  <main class="card">
+    <div class="badge">Folia for Android</div>
+    <h1>Folia 安卓版</h1>
+    <p class="lead">均为已签名 release 包，两版签名一致（CN=Folia），可互相覆盖安装。</p>
+
+    <div class="row">
+      <a class="btn" href="./apk/Folia-0.7.19-android-release-v32.apk" download>
+        <span class="title">优化版 v32 <span class="tag">推荐</span></span>
+        <span class="sub">修复版 · 13.6 MB</span>
+      </a>
+      <a class="btn alt" href="./apk/Folia-0.7.19-android-fixed-v31.apk" download>
+        <span class="title">微优化版 v31</span>
+        <span class="sub">渲染降级：滚动更顺滑，桌面/浏览器无影响 · 13.6 MB</span>
+      </a>
+    </div>
+
+    <div class="meta">
+      版本 <b>0.7.19</b> · 签名指纹 <b>52:68:F6:…:B0</b>
+    </div>
+    <div class="note">
+      若浏览器提示「不支持的文件类型」，请用系统浏览器打开本页面，或在文件管理器里找到下载好的 .apk 手动安装。安装时需允许「安装未知应用」。<br /><br />
+      <b>v31 微优化版</b>：仅在原生 Android 壳内关闭了弹窗大毛玻璃与滚动期间的 backdrop-blur，换取滑动流畅度；桌面端与浏览器版无任何变化。
+    </div>
+  </main>
+</body>
+</html>
